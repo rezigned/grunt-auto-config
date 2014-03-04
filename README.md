@@ -2,6 +2,8 @@
 
 > Automatically load all grunt plugins and their configs in a nicer way
 
+[![Build Status](https://travis-ci.org/rezigned/grunt-auto-config.png)](https://travis-ci.org/rezigned/grunt-auto-config)
+
 ## Getting Started
 > This plugin requires Grunt `~0.4.1`. 
 
