@@ -1,0 +1,43 @@
+{
+  "name": "grunt-auto-config",
+  "description": "Automatically load all grunt task's config",
+  "version": "0.1.0",
+  "homepage": "https://github.com/rezigned/grunt-auto-config",
+  "author": {
+    "name": "Marut K",
+    "url": "http://twitter.com/rezigned"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rezigned/grunt-auto-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rezigned/grunt-auto-config/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/rezigned/grunt-auto-config/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-coffeelint": "~0.0.8",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "config",
+    "auto"
+  ]
+}
