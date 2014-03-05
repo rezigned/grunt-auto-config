@@ -12,13 +12,16 @@ path = require 'path'
 module.exports = (grunt)->
 
   pkg = require path.resolve 'package.json'
+  npm = path.resolve 'node_modules'
   _   = grunt.util._
 
   # automatically load all npm tasks
   for task of pkg.devDependencies
 
-    # ignore task that does not begin with `grunt-`
-    if !~task.indexOf('grunt-') or task is 'grunt-auto-config'
+    # ignore npm module that does not have ./tasks dir
+    taskDir = path.join npm, task, 'tasks'
+
+    if !grunt.file.isDir taskDir or task is 'grunt-auto-config'
       continue
 
     grunt.verbose.writeln().write "grunt-auto-config: Loading #{task}"
